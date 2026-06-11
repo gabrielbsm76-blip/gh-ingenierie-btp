@@ -211,7 +211,7 @@
     #prestations { background: var(--gray-light); }
     .prestations-header { display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; margin-bottom: 52px; flex-wrap: wrap; }
     .prestations-grid {
-      display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       gap: 20px;
     }
     .prestation-card {
@@ -410,7 +410,7 @@
     <div class="hero-content">
       <div class="hero-tag">Conseil &amp; Ingénierie BTP</div>
       <h1>L'expertise technique<br/><em>à votre service</em></h1>
-      <p>Audit avant achat, analyse de devis, suivi de chantier et assistance à maîtrise d'ouvrage. J'accompagne les particuliers à chaque étape de leur projet.</p>
+      <p>Audit avant achat, AMO, suivi de chantier, études & métrés — j'accompagne les particuliers à chaque étape de leur projet avec une expertise technique indépendante.</p>
       <div class="hero-actions">
         <a href="#contact" class="btn-primary">Demander un devis gratuit</a>
         <a href="#prestations" class="btn-outline">Voir les prestations</a>
@@ -440,7 +440,7 @@
             </div>
             <div class="hero-stat">
               <div class="hero-stat-num">6</div>
-              <div class="hero-stat-label">Ans dans le domaine du bâtiment</div>
+              <div class="hero-stat-label">Ans dans le BTP</div>
             </div>
           </div>
           <div class="hero-divider"></div>
@@ -469,29 +469,11 @@
 
       <div class="prestation-card">
         <div class="prestation-img">
-          <img src="img-devis.png" alt="Analyse de devis" />
-        </div>
-        <h3>Analyse de devis</h3>
-        <p>Vérification des devis d'artisans, comparaison des offres et conseils techniques pour sécuriser votre budget.</p>
-        <span class="pill">Devis &amp; budgets</span>
-      </div>
-
-      <div class="prestation-card">
-        <div class="prestation-img">
           <img src="img-audit.png" alt="Audit avant achat" />
         </div>
         <h3>Audit avant achat</h3>
-        <p>Identification des travaux à prévoir et points de vigilance avant votre acquisition immobilière.</p>
+        <p>Identification des travaux à prévoir, points de vigilance et estimation budgétaire avant votre acquisition immobilière.</p>
         <span class="pill">Immobilier</span>
-      </div>
-
-      <div class="prestation-card">
-        <div class="prestation-img">
-          <img src="img-chantier.png" alt="Suivi de chantier" />
-        </div>
-        <h3>Suivi de chantier</h3>
-        <p>Visites de chantier, contrôle de l'avancement, comptes-rendus détaillés, respect des delais et du budget.</p>
-        <span class="pill">Chantier &amp; travaux</span>
       </div>
 
       <div class="prestation-card">
@@ -499,8 +481,35 @@
           <img src="img-amo.png" alt="Assistance à maîtrise d'ouvrage" />
         </div>
         <h3>Assistance à maîtrise d'ouvrage</h3>
-        <p>Accompagnement des particuliers dans leurs projets de rénovation, extension et construction.</p>
+        <p>Accompagnement complet des particuliers dans leurs projets de rénovation, extension et construction, de la conception jusqu'à la réception.</p>
         <span class="pill">AMO</span>
+      </div>
+
+      <div class="prestation-card">
+        <div class="prestation-img">
+          <img src="img-chantier.png" alt="Suivi de chantier" />
+        </div>
+        <h3>Suivi de chantier</h3>
+        <p>Visites de chantier régulières, contrôle de l'avancement, comptes-rendus détaillés et respect du planning.</p>
+        <span class="pill">Chantier & travaux</span>
+      </div>
+
+      <div class="prestation-card">
+        <div class="prestation-icon">
+          <svg viewBox="0 0 24 24"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/><polyline points="17 8 21 12 17 16"/></svg>
+        </div>
+        <h3>Études & métrés</h3>
+        <p>Réalisation de métrés, quantitatifs, plans d'exécution et carnets de détails techniques — des livrables précis pour préparer et cadrer vos projets.</p>
+        <span class="pill">Bureau d'études</span>
+      </div>
+
+      <div class="prestation-card">
+        <div class="prestation-img">
+          <img src="img-devis.png" alt="Conseil technique" />
+        </div>
+        <h3>Conseil technique</h3>
+        <p>Analyse de devis d'artisans, avis sur les matériaux et procédés constructifs, lecture de plans — une expertise technique indépendante pour éclairer vos décisions.</p>
+        <span class="pill">Conseil</span>
       </div>
 
     </div>
@@ -577,7 +586,7 @@
             </div>
             <div>
               <div class="contact-info-label">Email</div>
-              <div class="contact-info-val">gh-ingénierie@outlook.fr</div>
+              <div class="contact-info-val">gh-ingenierie@outlook.fr</div>
             </div>
           </div>
           <div class="contact-info">
@@ -595,7 +604,7 @@
             </div>
             <div>
               <div class="contact-info-label">Zone d'intervention</div>
-              <div class="contact-info-val">Paris & proche banlieue · Normandie (Rouen, Dieppe, 76/27)</div>
+              <div class="contact-info-val">Paris & proche banlieue · Normandie (76/27)</div>
             </div>
           </div>
         </div>
@@ -622,9 +631,10 @@
             <select id="projet" name="projet">
               <option value="" disabled selected>Sélectionner…</option>
               <option>Audit avant achat</option>
-              <option>Analyse de devis</option>
+              <option>Assistance à maîtrise d'ouvrage (AMO)</option>
               <option>Suivi de chantier</option>
-              <option>Assistance à maîtrise d'ouvrage</option>
+              <option>Études & métrés</option>
+              <option>Conseil technique</option>
               <option>Autre</option>
             </select>
           </div>
